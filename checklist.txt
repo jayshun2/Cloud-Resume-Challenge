@@ -1,12 +1,15 @@
 [] - Create Github Actions IAM user
 	[] - Create IAM policy for:
-		s3:*
-		cloudfront:*
-		route53:*
-		iam:*
-[] - Create Terraform IAM user
-	[] - Create IAM policy for:
 		s3:PutObject
 		s3:DeleteObject
 		s3:ListBucket
 		cloudfront:CreateInvalidation
+[] - Create Terraform IAM user
+	[] - Create IAM policy for:
+		s3:*
+		cloudfront:*
+		route53:*
+		iam:*
+		lambda:*
+		dynamodb:*
+		
