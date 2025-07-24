@@ -1,0 +1,62 @@
+Frontend: Static Website Hosting with S3 and CloudFront
+[X] Build your resume as a static website (HTML, CSS, JS)
+[ ] Create an S3 bucket for static site hosting
+[ ] Configure bucket to block public access and use CloudFront for delivery
+[ ] Upload website files to the S3 bucket using GitHub Actions
+[ ] Invalidate CloudFront cache after deployment (via GitHub Actions)
+
+HTTPS & Domain with Route 53 + ACM
+[ ] Register a domain or use an existing one
+[ ] Use Route 53 to manage DNS for your domain
+[ ] Request a public SSL certificate in us-east-1 using ACM
+[ ] Create a CloudFront distribution and attach ACM certificate
+[ ] Point your domain to the CloudFront distribution using Route 53 DNS records
+
+Visitor Counter with API Gateway, Lambda, and DynamoDB 
+[ ] Create a DynamoDB table for tracking visitor count
+[ ] Create a Lambda function to GET and UPDATE the visitor count
+[ ] Use API Gateway to expose the Lambda to your frontend
+[ ] Connect the frontend JavaScript to your API Gateway endpoint
+[ ] Add appropriate IAM roles and permissions for Lambda to access DynamoDB
+	
+Infrastructure as Code with Terraform
+[ ] Write modular Terraform code to deploy all AWS resources:
+    [ ] S3 bucket
+    [ ] CloudFront distribution
+    [ ] Route 53 Hosted Zone + DNS records
+    [ ] ACM certificate
+    [ ] DynamoDB table
+    [ ] Lambda function(s)
+    [ ] API Gateway
+    [ ] IAM roles/policies
+
+[ ] Store Terraform state securely
+
+CI/CD with GitHub Actions
+[ ] Push website source code and Terraform code to a GitHub repository
+[ ] Create a GitHub Actions workflow file (.github/workflows/deploy.yml) that:
+    [ ] Installs Terraform
+    [ ] Runs terraform init/plan/apply
+    [ ] Uploads website files to S3
+    [ ] Invalidates CloudFront cache
+
+[ ] Store AWS credentials securely as GitHub Actions secrets
+[ ] Use proper aws-actions/configure-aws-credentials in your workflow
+
+Safeguards/Cybersecurity
+[ ] Set up monitoring/logs for Lambda and API Gateway
+[ ] Set up rate-limiting
+[ ] Set lambda concurrency limit to cap simultaneous executions
+[ ] Add honeypot fields for bots/webscraping
+[ ] Set up WAF to monitor requests
+
+Failsafes
+[ ] Set up billing alarms in AWS Budgets
+[ ] Set up CloudWatch alarm on Lambda invocations
+
+Final Touches and Sharing
+[ ] Add a detailed README.md with architecture overview and tech stack
+[ ] Include a badge or JavaScript element showing visitor count
+[ ] Share your deployed site on LinkedIn, GitHub, x.com, YouTube
+[ ] Set up monitoring/logs for Lambda and API Gateway
+[ ] Set up rate-limiting
