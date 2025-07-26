@@ -2,18 +2,18 @@
 
 This repository contains the code and infrastructure for my implementation of the **Cloud Resume Challenge** — a hands-on cloud project designed by Forrest Brazeal to showcase cloud skills in action.
 
-### 🔗 Live Site  
+### Live Site  
 🌐 [crc.awsportfolio.jayfrench.cloud](https://crc.awsportfolio.jayfrench.cloud)
 
 ---
 
-## 🧱 What This Project Demonstrates
+## What This Project Demonstrates
 
 This project showcases a full-stack cloud deployment using **AWS**, **Terraform**, and **GitHub Actions**, with a frontend static resume site hosted via S3 and delivered through CloudFront.
 
 ---
 
-## 🚀 Architecture Overview
+## Architecture Overview
 
 - **Frontend**  
   - HTML/CSS/JS resume hosted in an S3 bucket
@@ -31,7 +31,7 @@ This project showcases a full-stack cloud deployment using **AWS**, **Terraform*
 
 ---
 
-## 🛠️ Project Structure
+## Project Structure
 
 ```
 
@@ -52,7 +52,7 @@ This project showcases a full-stack cloud deployment using **AWS**, **Terraform*
 
 ---
 
-## 🔐 Security Considerations
+## Security Considerations
 
 - **IAM users** for Terraform and GitHub Actions follow **least privilege** principle.
 - **S3 bucket** is private, accessible only through CloudFront.
@@ -60,7 +60,7 @@ This project showcases a full-stack cloud deployment using **AWS**, **Terraform*
 
 ---
 
-## ✅ Skills Demonstrated
+## Skills Demonstrated
 
 - AWS: S3, CloudFront, IAM, Route 53, ACM
 - DevOps: GitHub Actions for CI/CD
@@ -71,7 +71,7 @@ This project showcases a full-stack cloud deployment using **AWS**, **Terraform*
 
 ---
 
-## 📅 Future Enhancements
+## Future Enhancements
 
 - Add a live visitor counter using DynamoDB + Lambda + API Gateway
 - Integrate backend logging and metrics (e.g., CloudWatch dashboards)
@@ -79,7 +79,7 @@ This project showcases a full-stack cloud deployment using **AWS**, **Terraform*
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Inspired by the [Cloud Resume Challenge](https://cloudresumechallenge.dev/) by Forrest Brazeal.
-
+Thank you to all of those who may have advised on this project, and those who have advised on my career as a whole.
