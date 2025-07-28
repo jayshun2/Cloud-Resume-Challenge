@@ -1,0 +1,30 @@
+# Cloud Resume Challenge – AWS IP Plan
+# Owner: Jay French
+# Date: 7-26-2025
+# Region: us-east-1
+
+VPC CIDR Block:
+  10.0.0.0/16
+
+Availability Zones:
+  - us-east-1a
+  - us-east-1b
+
+------------------------------------------------------------
+| Subnet Name         | CIDR Block     | AZ         | Type   |
+|---------------------|----------------|------------|--------|
+| public-subnet-1a    | 10.0.0.0/24    | us-east-1a | Public |
+| public-subnet-1b    | 10.0.1.0/24    | us-east-1b | Public |
+| private-subnet-1a   | 10.0.100.0/24  | us-east-1a | Private|
+| private-subnet-1b   | 10.0.101.0/24  | us-east-1b | Private|
+
+Notes:
+- Public subnets will host Internet Gateway (IGW) + optional NAT Gateway
+- Private subnets intended for future expansion (Lambda, RDS, etc.)
+- CIDR blocks chosen to allow horizontal scaling (/24 blocks leave room)
+
+Reserved:
+- 10.0.200.0/24 → Reserved for internal use (e.g., future VPN)
+- 10.0.250.0/24 → Reserved for bastion host or jump box
+
+End of File
