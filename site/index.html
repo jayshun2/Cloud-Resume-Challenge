@@ -1,168 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jay's Cloud Resume</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- All code is original and hand-coded by Jay French. 
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Jay French | Cloud Engineer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-  Here is what YOU can do with this code:
+  <!-- Favicons -->
+  <link href="assets/img/site-icon.png" rel="icon">
+  <link href="assets/img/site-icon.png" rel="site-icon">
 
-  Commercial use
-  Distribution
-  Modification
-  Private Use
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
 
-  Following the MIT license, I am not liable for your use and cannot warranty it.
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  If you need help, my contact is contained in the site this was built for. If this is archived, you are viewing this through GitHub, which also contains my contact information.
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/ulicon.css" rel="stylesheet">
 
-  Best of luck, strive for excellence, and please be kind to others. Enjoy!
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/57a13b5ce8.js" crossorigin="anonymous"></script>
 
-  MIT License
-
-    Copyright (c) 2025 Jonathan (Jay) French
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
-     -->
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li class="navigation"><a class="navlink" href="#">Home</a></li>
-        <li class="navigation"><a class="navlink" href="#projects" >Projects</a></li>
-        <li class="navigation"><a class="navlink" href="#about" >About Me</a></li>
-        <li class="navigation"><a class="navlink" href="#contact" >Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section class="hero">
-    <h1>Hi, I’m Jay — Aspiring Cloud Engineer</h1>
-    <p>Building scalable solutions in AWS and helping others level up in tech.</p>
-    <div class="buttons">
-      <a class="btn primary" href="C:\Users\pooma\Documents\cloud-resume-challenge\Current Resume.docx">Download Resume</a>
-      <a class="btn secondary" href="https://github.com/jayshun2">View My GitHub</a>
-    </div>
-  </section>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-        <!-- Use Control + "/" to uncomment code -->
+<body class="index-page">
+<header id="header" class="header d-flex flex-column justify-content-center">
 
-      <a href="#" class="project-card"><div>
-        <h3>Project Trame</h3>
-        <p>An interesting example project. Learn more details.</p>
-        <span class="tag">AWS</span><span class="tag">Python</span>
-      </div></a>
+  <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <a href="#" class="project-card"><div>
-        <h3>Project Tremo</h3>
-        <p>An interesting example project. Learn more details.</p>
-        <span class="tag">AWS</span><span class="tag">Terraform</span>
-      </div></a>
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="#hero" class="active"><i class="fa-solid fa-house"></i><span style="font-size: small;">Home</span></a></li>
+      <li><a href="#about"><i class="fa-regular fa-address-card"></i><span style="font-size: small;">About</span></a></li>
+      <li><a href="#skills"><i class="bi bi-tools navicon"></i><span style="font-size: small;">Skills & Tools</span></a></li>
+      <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span style="font-size: small;">Resume</span></a></li>
+      <li><a href="#certifications"><i class="bi bi-award navicon"></i><span style="font-size: small;">Certification</span></a></li>
+      <li><a href="#portfolio"><i class="bi bi-github navicon"></i><span style="font-size: small;">Projects</span></a></li>      
+      <li><a href="#visitors"><i class="fa-solid fa-user"></i><span style="font-size: small;">Visitors: <span class="visits" style="color: #40fd06;font-size: 1.5em;"></span></span></a></li>
+  </ul>
+  </nav>
+  </nav>
 
-      <a href="#" class="project-card"><div>
-        <h3>Project Tremo</h3>
-        <p>An interesting example project. Learn more details.</p>
-        <span class="tag">AWS</span>
-      </div></a>
 
-      <a href="#" class="project-card"><div>
-        <h3>Cloud Resume Challenge</h3>
-        <p>An interesting example project. Learn more details.</p>
-        <span class="tag">AWS</span>
-        <span class="tag">Python</span>
-        <span class="tag">Terraform</span>
-        <span class="tag">GitHub Actions</span>
-      </div></a>
+</header>
+  <main class="main">
+   
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-      <!-- <a href="#" class="project-card"><div>
-        <h3>Project Block Template</h3>
-        <p>An interesting example project. Learn more details.</p>
-        <span class="tag">Skill 1</span>
-        <span class="tag">Skill 2</span>
-        <span class="tag">Skill 3</span>
-        <span class="tag">Skill 4</span>
-      </div></a> -->
-
-    </div>
-  </section>
-
-  <section class="about">
-    <div class="left">
-        <h1>Quick Overview</h1>
-        <p>From the manufacturing industry to a career in tech, with experience in finance and healthcare.</p>
-        <div class="skills">
-            <img src="aws-logo.png" alt="AWS" />
-            <img src="python-logo.png" alt="Python" />
-            <img src="terraform-logo.png" alt="Terraform" />
-            <img src="security-logo.png" alt="Security" />
+      <img src="assets/img/mainbackground.jpg" alt="credits: NASA.">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-start"> <!-- Changed justify-content-center to justify-content-start -->
+          <div class="col-lg-8"> <!-- Reduced the size of the column to move it to the left -->
+            <h2>Jay French</h2>
+            <p>I'm a <span class="typed" data-typed-items="Cloud Engineer, Developer, Systems Administrator, Innovator, Team Player, Problem Solver"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://github.com/jayshun2" target="_blank" style="color: #2d8feb;" class="icon zoom"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/jayshun2" target="_blank" style="color: #2d8feb;" class="icon zoom"><i class="bi bi-linkedin"></i></a>
+              <a href="javascript:void(0);" onclick="copyEmail()" style="color: #2d8feb;" class="icon zoom" title="jonathanbrofrench@gmail.com"><i class="bi bi-envelope"></i></a>
+              
+              <script>
+                function copyEmail() {
+                  const email = "jonathanbrofrench@gmail.com";
+                  navigator.clipboard.writeText(email).then(() => {
+                    alert("Email address copied to clipboard: " + email);
+                  }).catch(err => {
+                    console.error('Failed to copy email: ', err);
+                  });
+                }
+              </script>
+            </div>                                   
+          </div>
         </div>
-    </div>
-    <div class="right">
-        <h1>Certification in Progress</h1>
-        <ul class="certs">
-            <li>AWS Certified Solutions Architect</li>
-            <li>AWS Certified SysOps Administrator</li>
-            <li>AWS Certified Developer Associate</li>
+      </div>
+         
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/pfp.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Cloud Engineer | IT Professional with a Focus on AWS, Infrastructure as Code, and Automation</h2>
+            <p>I am a Cloud Engineer with a strong foundation in IT and a passion for everything cloud. While earning my Bachelor's degree in Information Technology from Western Governors University, I began building a portfolio of hands-on cloud projects to deepen my expertise in AWS and infrastructure automation.</p>
+            <p>My focus is on mastering core cloud services, Terraform, and CI/CD pipelines, with the goal of transitioning into a cloud engineering role. I’m currently completing the AWS Solutions Architect, Developer, and SysOps certifications while actively building real-world experience through a self-driven “52 Projects in 52 Weeks” challenge.</p>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills & Tools</h2>
+  </div><!-- End Section Title -->
+  
+  <!-- Icon Cards Section -->
+  <div class="icon-cards" data-aos="fade-up">
+    <div class="container">
+      <ul>
+        <li style="--accent-color:#003780">
+        <a href="https://aws.amazon.com/" target="_blank" style="color: #0c23a7;">
+          <div class="icon"><i class="fa-brands fa-aws"></i></div>
+          <div class="title">AWS</div>
+        </a>
+        <div class="descr">Amazon Web Services is a cloud computing platform by Amazon.</div>
+      </li>
+      <li style="--accent-color:#004db3">
+        <a href="https://azure.microsoft.com/" target="_blank" style="color: #004db3;">
+          <div class="icon"><img src="assets/img/azure.png" alt="Azure Logo"></div>
+          <div class="title">Azure</div>
+        </a>
+        <div class="descr">Microsoft Azure is a cloud computing service by Microsoft.</div>
+      </li>
+      <li style="--accent-color:#0058cc">
+        <a href="https://www.docker.com/" target="_blank" style="color: #0058cc;">
+          <div class="icon"><i class="fa-brands fa-docker"></i></div>
+          <div class="title">Docker</div>
+        </a>
+        <div class="descr">Docker delivers software in containers using OS-level virtualization.</div>
+      </li>
+      <li style="--accent-color:#006eff">
+        <a href="https://github.com/" target="_blank" style="color: #006eff;">
+          <div class="icon"><i class="fa-brands fa-git"></i></div>
+          <div class="title">Git/GitHub</div>
+        </a>
+        <div class="descr">Git is a distributed version control system. GitHub allows for hosting and collaborating on Git repos.</div>
+      </li>
+      <li style="--accent-color:#4d9aff">
+        <a href="https://kubernetes.io/" target="_blank" style="color: #0058cc;">
+          <div class="icon"><img src="assets/img/kube.png" alt="Kubernetes Logo"></div>
+          <div class="title">Kubernetes</div>
+        </a>
+        <div class="descr">Kubernetes is an open-source container orchestration platform.</div>
+      </li>
         </ul>
-    </div>
-  </section>
+        <ul>
+      <li style="--accent-color:#4d9aff">
+        <a href="https://golang.org/" target="_blank" style="color: #2881f6;">
+          <div class="icon"><i class="fa-brands fa-golang"></i></div>
+          <div class="title">Go</div>
+        </a>
+        <div class="descr">Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software.</div>
+      </li>
+      <li style="--accent-color:#006eff">
+        <a href="https://www.python.org/" target="_blank" style="color: #2881f6;">
+          <div class="icon"><i class="fa-brands fa-python"></i></div>
+          <div class="title">Python</div>
+        </a>
+        <div class="descr">Python is a high-level, interpreted programming language.</div>
+      </li>
+      <li style="--accent-color:#0058cc">
+        <a href="https://www.gnu.org/software/bash/" target="_blank" style="color: #0058cc;">
+          <div class="icon"><img src="assets/img/bash.png" alt="Bash Logo"></div>
+          <div class="title">Bash</div>
+        </a>
+        <div class="descr">Bash is a Unix shell and command language.</div>
+      </li>
+      <li style="--accent-color:#004db3">
+        <a href="https://www.terraform.io/" target="_blank" style="color: #004db3;">
+          <div class="icon"><img src="assets/img/Terra.png" alt="Terraform Logo"></div>
+          <div class="title">Terraform</div>
+        </a>
+        <div class="descr">Terraform is an open-source infrastructure as code software tool by HashiCorp.</div>
+      </li>
+      <li style="--accent-color:#003780">
+        <a href="https://www.ansible.com/" target="_blank" style="color: #003780;">
+          <div class="icon"><img src="assets/img/Ansible.png" alt="Ansible Logo"></div>
+          <div class="title">Ansible</div>
+        </a>
+        <div class="descr">Ansible is an open-source software provisioning, configuration management, and application-deployment tool.</div>
+      </li>
+    </ul>
+  </div>
+</section><!-- /Skills Section -->
 
-  <section class="visitorcount">
-    <p class="count">You are visitor #[visit count]!!</p>
-  </section>
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+   
+            <h3 class="resume-title">Work Experience</h3>
+            <br>
+            <div class="resume-item">
+              <h4>IT Network Technician</h4>
+              <h5>October 2024 - Present</h5>
+              <p><em>Salina Regional Health Center, Salina, Kansas</em></p>
+                <ul>
+                  <li>Originally contracted through TEKSystems</li>
+                  <li>Executed network infrastructure upgrades and migrations, including closet cutovers, to ensure seamless transitions and minimal downtime in hybrid or cloud environments.</li>
+                  <li>Deployed and organized networking equipment (rack and stack), optimizing infrastructure for improved scalability.</li>
+                  <li>Upgraded and replaced Wireless Access Points (WAPs), enhancing connectivity and preparing networks for integration with cloud-based systems.</li>
+                </ul>
+              </ul>
+            </div><!-- Edn Resume Item -->
 
-  <!-- <section id="about">
-    <div class="about-left">
-      <p>From the manufacturing industry to a career in tech, with experience in finance and healthcare.</p>
-      <div class="skills">
-        <img src="aws-logo.png" alt="AWS" />
-        <img src="python-logo.png" alt="Python" />
-        <img src="terraform-logo.png" alt="Terraform" />
-        <img src="security-logo.png" alt="Security" />
+            <div class="resume-item">
+              <h4>IT Systems Administrator</h4>
+              <h5>2023 - 2024</h5>
+              <p><em>The Bennington State Bank, Salina, Kansas</em></p>
+                <ul>
+                  <li>Managed and Optimized IT infrastructure to support over 150 end users, resulting in uptime for critical systems and applications..</li>
+                  <li>Implemented update management processes that reduced system vulnerabilities and increased overall system security posture.</li>
+                  <li>Collaborated with cross-functional teams to streamline end user support ticket resolution process, resulting in an increase in overall user satisfaction.</li>
+                  <li>Installed, monitored, and troubleshooted network and infrastructure devices, ensuring optimal performance and security.</li>
+                </ul>
+              </ul>
+            </div><!-- Edn Resume Item -->
+            
+            
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Education</h3>
+            <br>
+            <div class="resume-item">
+              <h4>Bachelor of Science, Information Technology</h4>
+              <h5>August, 2025</h5>
+              <p><em>Western Governors University</em></p>
+              <p>I am completing my B.S. in Information Technology from WGU with a focus on AWS cloud technologies. Through hands-on projects in cloud architecture, infrastructure as code, and CI/CD automation, I’m building practical experience to complement my studies. I’m also earning industry-recognized AWS certifications to prepare for cloud engineering and solutions architect roles.</p>
+            </div><!-- Edn Resume Item -->
+            
+            <div class="resume-item">
+              <h4>Master of Science, Information Technology Management</h4>
+              <h5>August, 2026 (In Progress)</h5>
+              <p><em>Western Governors University</em></p>
+              <p>I will be pursuing my M.S. in Information Technology Management to strengthen my leadership and strategic decision-making skills in the IT space. Building on my technical foundation and hands-on cloud experience, this degree will prepare me to lead high-impact technology initiatives, manage cross-functional teams, and align IT strategy with business goals in cloud-driven environments.</p>
+            </div><!-- Edn Resume Item -->            
+            <!-- Download Button Section -->
+            </div><!-- End Resume Item --> 
+
+    </section>
+    
+    <!-- /Resume Section -->
+    
+    <!-- certifications Section - leaving certifications declaration--> 
+    <section id="certifications" class="certifications section">
+    <!-- certifications Section -->
+      
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <p>Feel free to verify my certifications.</p>
+        </div><!-- End Section Title -->
+        
+       <!-- /Resume Section -->
+    
+    <!-- certifications Section - leaving certifications declaration--> 
+    <section id="certifications" class="certifications section">
+      <!-- certifications Section -->
+        
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+          <h2>Certifications</h2>
+          <p>Feel free to verify my certifications.</p>
+          </div><!-- End Section Title -->
+          
+          <!-- Icon Cards Section -->
+          <div class="icon-cards" data-aos="fade-up">
+            <div class="container">
+              <ul>
+              <li style="--accent-color:#0058cc">
+                <div class="image-container"><img src="assets/img/saa.png" alt="AWS Certified Solutions Architect Associate" /></div>
+                <div class="title" style="font-size: 1.0em;">AWS Certified Solutions Architect Associate (In Progress)</div>
+                <div class="descr">                
+                  <!-- <a href="" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a> -->
+                </div>
+              </li>
+              
+              <li style="--accent-color:#0058cc">
+                <div class="image-container">
+                <img src="assets/img/dva.png" alt="AWS Certified Developer Associate" />
+                </div>
+                <div class="title" style="font-size: 1.0em;">AWS Certified Developer Associate (In Progress)</div>
+                <div class="descr">                
+                  <!-- <a href="" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a> -->
+                </div>
+              </li>
+
+              <li style="--accent-color:#0058cc">
+                <div class="image-container">
+                <img src="assets/img/soa.png" alt="AWS SOA" />
+                </div>
+                <div class="title" style="font-size: 1.0em;">AWS Certified SysOps Administrator Associate (In Progress)</div>
+                <div class="descr">
+                  <!-- <a href="" target="_blank" style="color: #0c23a7"><strong>Verify Badge</strong></a></div> -->
+              </li>
+
+              <li style="--accent-color:#0058cc">
+                <div class="image-container">
+                <img src="assets/img/secplus.png" alt="CompTIA Security+" />
+                </div>
+                <div class="title" style="font-size: 1.0em;">CompTIA Security+</div>
+                <div class="descr">
+                  <!-- <a href="" target="_blank" style="color: #0c23a7"><strong>Verify Badge</strong></a></div> -->
+              </li>
+
+              <li style="--accent-color:#0058cc">
+                <div class="image-container">
+                <img src="assets/img/netplus.png" alt="CompTIA Network+" />
+                </div>
+                <div class="title" style="font-size: 1.0em;">CompTIA Network+</div>
+                <div class="descr">
+                  <!-- <a href="" target="_blank" style="color: #0c23a7"><strong>Verify Badge</strong></a></div> -->
+              </li>
+              </ul>
+
+              <ul>
+              <li style="--accent-color:#0058cc">
+                <div class="image-container"><img src="assets/img/aplus.png" alt="CompTIA A+" /></div>              
+                <div class="title" style="font-size: 1.0em;">CompTIA A+</div>
+                <div class="descr">
+                  <!-- <a href="" target="_blank" style="color: #0c23a7"><strong>Verify Badge</strong></a></div> -->
+              </li>
+
+              <li style="--accent-color:#0058cc">
+                <div class="image-container"><img src="assets/img/cios.jpg" alt="CompTIA CIOS"></div>
+                <div class="title" style="font-size: 1.0em;">CompTIA IT Operations Specialist</div>
+                <div class="descr">
+                  <!-- <a href="" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a> -->
+              </li>
+
+              <li style="--accent-color:#0058cc">
+                <div class="image-container"><img src="assets/img/csis.jpg" alt="CompTIA CSIS"></div>
+                <div class="title" style="font-size: 1.0em;">CompTIA Secure Infrastructure Specialist</div>
+                <div class="descr">
+                  <!-- <a href="" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a> -->
+              </li>
+
+              <li style="--accent-color:#0058cc">
+                <div class="image-container"><img src="assets/img/capm.png" alt="PMI CAPM"></div>
+                <div class="title" style="font-size: 1.0em;">PMI CAPM (Exam Scheduled Dec. 2025)</div>
+                <div class="descr">
+                  <!-- <a href="" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a> -->
+              </li>
+
+              <li style="--accent-color:#0058cc">
+                <div class="image-container"><img src="assets/img/pcap.png" alt="PCAP Badge"></div>
+                <div class="title" style="font-size: 1.0em;">Python PCAP (In Progress)</div>
+                <div class="descr">
+                  <!-- <a href="" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a> -->
+              </li>
+
+            </ul>
+          </div>
+      </section><!-- End Certifications Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4>Cloud Resume Challenge</h4>
+              <p><a href="https://github.com/digimodify/cloud-resume-challenge" target="_blank" style="color: #7ab9f4;">GitHub</a></em></p>
+              <p><a href="https://dev.to/etienneci/serverless-cloud-resume-challenge-4ic7" target="_blank" style="color: #7ab9f4;">Blog Post</a></em></p>
+              <p>A personal project demonstrating cloud-native development and serverless architecture</p>
+              <ul>
+                <li><a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank" style="color: #7ab9f4;">Forrest Brazeal's Cloud Resume Challenge</a></li>
+                <li>Developed full-stack cloud resume website with real-time visitor tracking using AWS serverless architecture, featuring S3 static hosting, CloudFront CDN distribution, and custom domain integration</li>
+                <li>Built serverless backend infrastructure with Python Lambda functions and DynamoDB for visitor count persistence, demonstrating event-driven architecture and NoSQL database design patterns</li>
+                <li>Automated cloud infrastructure provisioning using AWS SAM (Serverless Application Model) templates and implemented CI/CD pipeline with GitHub Actions for continuous integration and deployment</li>
+                <li>Ensured code quality and reliability through comprehensive unit testing, automated deployment validation, and infrastructure-as-code best practices</li>
+              </ul>
+            </div><!-- End Resume Item -->
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="resume-item">
+              <h4>Kubernetes Resume Challenge</h4>
+              <p><a href="https://github.com/digimodify/k8s-ecommerce-deployment" target="_blank" style="color: #7ab9f4;">GitHub</a></em></p>
+              <p>A portfolio project demonstrating enterprise-grade container orchestration and DevOps practices</p>
+              <ul>
+                <li><a href="https://cloudresumechallenge.dev/docs/extensions/kubernetes-challenge/" target="_blank" style="color: #7ab9f4;">Forrest Brazeal's Kubernetes Resume Challenge</a></li>
+                <li>Architected enterprise-grade CI/CD pipeline with GitHub Actions, implementing automated testing, security scanning, and multi-environment deployment workflows for containerized PHP e-commerce application</li>
+                <li>Designed production-ready Kubernetes infrastructure featuring ConfigMaps/Secrets management, horizontal pod autoscaling (HPA), health probes, and rolling updates with zero-downtime deployment strategies</li>
+                <li>Implemented infrastructure-as-code patterns with Helm charts and comprehensive automation (40+ Makefile commands), demonstrating platform engineering best practices and AWS EKS migration planning</li>
+              </ul>
+            </div><!-- End Resume Item -->
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="resume-item">
+              <h4>Command-Line Weather Application</h4>
+              <p><a href="https://github.com/digimodify/weather-app" target="_blank" style="color: #7ab9f4;">GitHub</a></em></p>
+              <p>A Python-based CLI application demonstrating API integration and user interface design</p>
+              <ul>
+                <li>Developed cross-platform command-line weather application with colorful terminal output, supporting multiple location formats including cities, ZIP codes, and GPS coordinates</li>
+                <li>Integrated OpenWeatherMap API with robust error handling, input validation, and comprehensive user experience features including unit system selection and location memory</li>
+                <li>Implemented modular Python architecture with separation of concerns, featuring dedicated modules for CLI interface, API interaction, and configuration management</li>
+                <li>Designed user-friendly interface with dynamic menu system, real-time weather data display, and cross-platform compatibility for Windows, macOS, and Linux environments</li>
+              </ul>
+            </div><!-- End Resume Item -->
+          </div>
+        </div>
+    </section>
+  
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <h5 class="sitename">Please feel free to contact me with any questions.</h5>
+      <br>
+      <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/digimodify" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/etienneci" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:etienneci@proton.me"><i class="bi bi-envelope"></i></a>
+                    
+        </div>                
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <!--<span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span> -->
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
       </div>
     </div>
-    <ul class="certs">
-      <li>AWS Certified Solutions Architect</li>
-      <li>AWS Certified SysOps Administrator</li>
-      <li>AWS</li>
-    </ul>
-  </section>
-   -->
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Jay French - Cloud Engineering</p>
   </footer>
+
+  <!-- Scroll Top -->
+  <div class="scroll-top-container d-flex align-items-center justify-content-center">
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Scroll to top">
+      <img src="assets/img/pfp-backtotop.png" alt="Scroll to top" />
+    </a>
+  </div>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets\js\main.js"></script>
+
+  <script src="assets\js\counter.js"></script>
+
 </body>
+
 </html>
