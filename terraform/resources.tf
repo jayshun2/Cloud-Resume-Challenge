@@ -63,7 +63,7 @@ resource "aws_s3_bucket_policy" "dev_bucket_policy" {
 
 
 #------------------------------------------------------------------------
-# Cloudfront Configuration
+# Cloudfront Configuration test push
 #------------------------------------------------------------------------
 
 
