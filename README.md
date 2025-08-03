@@ -44,6 +44,8 @@ This project showcases a full-stack cloud deployment using **AWS**, **Terraform*
 │   └── ...
 ├── terraform/                # Infrastructure as Code
 │   ├── main.tf
+│   ├── network.tf            # Networking Resourcees
+│   ├── resources.tf          # S3, CloudFront, Route53, etc..
 │   ├── variables.tf
 │   └── outputs.tf
 └── README.md
