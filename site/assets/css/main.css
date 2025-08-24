@@ -1181,3 +1181,26 @@ section,
 
 
 /*--------------------------------------------------------------
+/*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+.table-div {
+  display: flex;
+  justify-content: center;
+
+}
+.table-certs {
+  all: unset;
+}
+
+.table-certs, td, th{
+  border: 1px solid #0563bb;
+  color:#ffffff;
+  padding: 10px;
+
+}
+
+.table-status {
+  color:#000000;
+  background-color:#059652;
+}
